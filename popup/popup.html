@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../ui/theme.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="../icons/icon48.png" alt="" width="28" height="28">
+    <h1 data-i18n="extName"></h1>
+    <label class="switch" data-i18n-title="toggleTitle">
+      <input type="checkbox" id="enabled" data-i18n-label="enabled">
+      <span class="track"></span>
+    </label>
+  </header>
+  <p class="state" id="state"></p>
+  <dl class="stats">
+    <div><dt data-i18n="statAds"></dt><dd id="total">0</dd></div>
+    <div><dt data-i18n="statBonus"></dt><dd id="bonusTotal">0</dd></div>
+  </dl>
+  <p class="hint" id="hint" data-i18n="reloadHint" hidden></p>
+  <button class="btn" id="options" type="button" data-i18n="settings"></button>
+  <script src="../src/settings.js"></script>
+  <script src="../ui/i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

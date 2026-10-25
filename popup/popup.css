@@ -1,0 +1,11 @@
+body { width: 260px; padding: 14px 16px 16px; }
+header { display: flex; align-items: center; gap: 8px; }
+h1 { font-size: 16px; margin: 0; flex: 1; }
+.state { margin: 6px 0 12px; color: var(--muted); font-size: 13px; }
+.stats { margin: 0 0 12px; padding: 10px 12px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
+.stats div { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.stats div + div { margin-top: 6px; }
+.stats dt { color: var(--muted); }
+.stats dd { margin: 0; font-weight: 700; font-variant-numeric: tabular-nums; }
+.hint { margin: 0 0 12px; font-size: 12px; color: var(--muted); }
+#options { width: 100%; }

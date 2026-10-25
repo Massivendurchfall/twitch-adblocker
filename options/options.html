@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="optionsTitle"></title>
+  <link rel="icon" href="../icons/icon32.png">
+  <link rel="stylesheet" href="../ui/theme.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <header class="top">
+      <img src="../icons/icon128.png" alt="" width="44" height="44">
+      <div>
+        <h1 data-i18n="extName"></h1>
+        <p class="muted" data-i18n="settings"></p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <div class="text">
+          <h2 data-i18n="enabled"></h2>
+          <p data-i18n="enabledDesc"></p>
+        </div>
+        <label class="switch"><input type="checkbox" data-setting="enabled" data-i18n-label="enabled"><span class="track"></span></label>
+      </div>
+    </section>
+
+    <div class="depends-on-enabled">
+      <h3 class="section-title" data-i18n="sectionAds"></h3>
+      <section class="card">
+        <div class="row">
+          <div class="text">
+            <h2 data-i18n="streamAds"></h2>
+            <p data-i18n-html="streamAdsDesc"></p>
+          </div>
+          <label class="switch"><input type="checkbox" data-setting="streamAds" data-i18n-label="streamAds"><span class="track"></span></label>
+        </div>
+        <div class="row">
+          <div class="text">
+            <h2 data-i18n="displayAds"></h2>
+            <p data-i18n="displayAdsDesc"></p>
+          </div>
+          <label class="switch"><input type="checkbox" data-setting="displayAds" data-i18n-label="displayAds"><span class="track"></span></label>
+        </div>
+      </section>
+
+      <h3 class="section-title" data-i18n="sectionExtras"></h3>
+      <section class="card">
+        <div class="row">
+          <div class="text">
+            <h2 data-i18n="claimBonus"></h2>
+            <p data-i18n="claimBonusDesc"></p>
+          </div>
+          <label class="switch"><input type="checkbox" data-setting="claimBonus" data-i18n-label="claimBonus"><span class="track"></span></label>
+        </div>
+      </section>
+    </div>
+
+    <h3 class="section-title" data-i18n="sectionStats"></h3>
+    <section class="card stats">
+      <div><span class="num" id="total">0</span><span class="muted" data-i18n="statAds"></span></div>
+      <div><span class="num" id="bonusTotal">0</span><span class="muted" data-i18n="statBonus"></span></div>
+      <button class="btn" id="reset" type="button" data-i18n="reset"></button>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="../src/settings.js"></script>
+  <script src="../ui/i18n.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
